@@ -8,6 +8,7 @@
 body{
     background-color: black;
     color: rgb(200, 200, 220);
+    height: 100vw;
 }
 
 nav {
@@ -68,4 +69,11 @@ nav ul {
 .gameInfo {
     padding: 6px;
     margin: 4px;
+}
+
+
+.imgBox img{
+    width: 0;
+    transition: 1s ease-in-out;
+    z-index: 100;
 }
