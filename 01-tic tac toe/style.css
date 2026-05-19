@@ -3,12 +3,16 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 body{
     background-color: black;
     color: rgb(200, 200, 220);
     height: 100vw;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
 }
 
 nav {
@@ -19,8 +23,6 @@ nav {
     padding: 16px 32px;
     margin: 4px;
     font-size: 32px;
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
 }
 
 nav ul {
@@ -28,20 +30,16 @@ nav ul {
 
 }
 
-.gameInfo {
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-}
+
 
 .gameContainer {
     /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
-    margin: 40px 20px;
+    margin: 20px 10px;
     padding: 12px 6px;
 }
+
 
 .container {
     display: grid;
@@ -67,6 +65,10 @@ nav ul {
 }
 
 .gameInfo {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
     padding: 6px;
     margin: 4px;
 }
@@ -75,5 +77,7 @@ nav ul {
 .imgBox img{
     width: 0;
     transition: 1s ease-in-out;
-    z-index: 100;
+    display: flex;
+    
+    /* z-index: 100; */
 }

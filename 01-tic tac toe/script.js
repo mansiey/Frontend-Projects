@@ -53,6 +53,8 @@ boxes.forEach((ele) => {
             checkWin();
             if (!isGameOver) {
                 document.getElementsByClassName("info")[0].innerText = "Turn For " + turn;
+            } else {
+                document.getElementsByClassName("box").innerText = '';
             }
             
         }
