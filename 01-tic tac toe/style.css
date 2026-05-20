@@ -3,15 +3,15 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
 }
 
 body{
     background-color: black;
     color: rgb(200, 200, 220);
     height: 100vw;
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
+    
     text-align: center;
 }
 
@@ -38,6 +38,7 @@ nav ul {
     justify-content: center;
     margin: 20px 10px;
     padding: 12px 6px;
+    max-height: 80vh;
 }
 
 
@@ -46,8 +47,6 @@ nav ul {
     gap: 4px;
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
-    font-family: "Martel Sans", sans-serif;
-    font-weight: 600;
 }
 
 .box {
@@ -71,6 +70,10 @@ nav ul {
     text-align: center;
     padding: 6px;
     margin: 4px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -78,6 +81,18 @@ nav ul {
     width: 0;
     transition: 1s ease-in-out;
     display: flex;
-    
+
     /* z-index: 100; */
+}
+
+#reset {
+    font-size: 18px;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    opacity: 0.8;
+    z-index: 10;
 }

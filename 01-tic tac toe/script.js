@@ -12,6 +12,14 @@ const changeTurn = () => {
     return turn === "X" ? "0" : "X";
 }
 
+function resetGame() {
+    if(isGameOver === true) {
+        document.getElementsByClassName("box").innerText = '';
+    }
+}
+
+reset.addEventListener('click', resetGame());
+
 //function if won
 let winningPattern = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -53,10 +61,9 @@ boxes.forEach((ele) => {
             checkWin();
             if (!isGameOver) {
                 document.getElementsByClassName("info")[0].innerText = "Turn For " + turn;
-            } else {
-                document.getElementsByClassName("box").innerText = '';
-            }
-            
+            } 
+
+            resetGame(); 
         }
     })
 })
